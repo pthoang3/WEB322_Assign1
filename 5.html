@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PTH Airbnb</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    </head>
+    <body>
+<div class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar_container">
+           <a href="" id="navbar_logo"><i class="fa fa-heartbeat" aria-hidden="true"></i>Airbnb</a> 
+           <div class="navbar_toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+           </div>
+           <ul class="navbar_menu" >
+               <li class="navbar_item">
+                   <a href="/" class="navbar_links" >Home</a>
+               </li>
+               <li class="navbar_item">
+                <a href="#" id="login_popup_btn" class="navbar_links">Login</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#" id="signup_popup_btn" class="navbar_links">Sign Up</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/BecomeAHost" class="navbar_links">Become a host</a>
+                </li>
+                <li class="navbar_btn" >
+                      <a href="#search_form" class="search_btn"><i class="fa fa-search" aria-hidden="true"></i>Search</a>
+                </li>
+           </ul>
+        </div>
+    </nav>
+   
+    <div class="row">
+      <div class="col-2">
+        <h2 class="class-content">Cozy place in heart of leslieville</h2>
+        <p><i class="fas fa-heart">Superhost</i> - <i class="fas fa-star"> 4.89(36)</i> </p>
+        <a href="" class="btn"> See More</a>
+      </div>
+      <div class="col-2">
+        <img src="../images/1.jpg" alt="">
+        <img>
+        
+      </div>
+  </div>
+    </div>
+ </div>    
+<!--Information Section-->
+<div class="small-container">
+  <h2 class="title"> Relate House</h2>
+<div class="row" id="row-col">
+  <div class="col-2" >
+    <form id="search_form" method="post" action="https://httpbin.org/post" onsubmit="formValidation();">
+      <h1>Find your airbnb.</h1>
+      <label>Location</label>
+      <br>
+      <select class="search_select" name="location">
+          <option value="">Please select a city</option>
+          <option value="Toronto">Toronto</option>
+          <option value="London">Missisauga</option>
+          <option value="Missisauga">Ottawar</option>
+          <option value="Brampton">Vancouver</option>
+      </select>
+      <br>
+      <label>Check-in</label>
+      <br>
+      <input class="search_input" type="date" name="checkIn">
+      <br>
+      <label>Check-out</label>
+      <br>
+      <input class="search_input" type="date" name="checkOut">
+      <br>
+      <label>Guests</label>
+      <br>
+      <select class="search_select" name="guest">
+          <option value="1">1 guest</option>
+          <option value="2">2 guests</option>
+          <option value="3">3 guests</option>
+          <option value="4">4 guests</option>
+          <option value="5">5 guests</option>
+          <option value="5">6 guests</option>
+          <option value="5">7 guests</option>
+      </select>
+      <br>
+      <div id="search_button">
+          <input type="submit" id="search_findButton" value="Find">
+      </div>
+  </form>
+  </div>
+  <div class="col-2" id="content-col">
+  <h2>Private room in house hosted by Kaye</h2>
+  <p>2 guests · 1 bedroom · 1 bed · 1 shared bath</p>
+  <div class="add_info">
+  <h3><i class="fas fa-door-open"></i> Self Check-in </h3> 
+  <br>
+  <h3><i class="fas fa-calendar-week"></i>Cancellation policy</h3>
+  <br>
+  </div>
+ <div class="feature">
+   <ul><h2>Feature:</h2>
+    <br>
+    <l><h3>Super easy to access 401&DVP, it helps save your travel time</h3></l>
+    <br>
+    <l><h3>Wi-Fi</h3></l>
+    <br>
+    <l><h3>Free parking</h3></l>
+    <br>
+    <l><h3>Airport pick up/drop off service is provided with the extra payment:</h3></l>
+    <br>
+    <l><h3>$40CAD drop off</h3></l>
+    <br>
+    <l><h3>$45CAD pick up</h3></l>
+    <br>
+  </ul>
+ </div>
+
+    
+  </div>
+</div>
+  </div>
+  
+<!--Review-->
+<h2 class="testimonial_title">Top feedback</h2> 
+<div class="testimonial">
+    <div class="small-container"> 
+    <div class="row">
+        <div class="col-3">
+            <i class="fas fa-quote-left"></i>
+            <p>"This place was perfect for me. I will recommend it to other people for sure! Many thanks to Kaye! She is really a superhost!"</p>
+            <div class="rating">Rate:
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <img src="../images/user1.jpg" alt="">
+            <h3>Cantanila</h3>
+        </div>
+        <div class="col-3">
+            <i class="fas fa-quote-left"></i>
+            <p>"A true pleasure staying with Kaye. Conscientious and considerate of guests' needs, she's a wonderful host and amazing mom to her puppy Jackson, who is impossible not to love."</p>
+            <div class="rating"><br>Rate:
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <img src="../images/user2.jpeg" alt="">
+            <h3>Clara</h3>
+        </div>
+        <div class="col-3">
+            <i class="fas fa-quote-left"></i>
+            <p>"We had a great stay at Kaye's place during our visit to Toronto! Super smooth check-in and out, and Kaye is very communicative - everything was clear and easy. "</p>
+            
+            <div class="rating"><br>Rate:
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <img src="../images/user3.jpeg" alt="">
+            <h3>Hannah</h3>
+        </div>
+    </div>
+    </div>
+</div> 
+<!--Relate house-->
+<div class="categories1">
+  <div class="small-container">
+  <h2 class="title">Related House</h2>
+  <div class="row">
+  
+      <div class="col-6"><a href="/5">
+          <img src="../images/5.jpg" alt="">
+           
+             <h4>Cozy place in heart of leslieville
+             <div class="host">Superhost</div></h4>        
+             <div class="type"> <b>Private Room</b></div><div class="rating">Rate: 4.89
+            <i class="fas fa-star"></i> 
+        </div>
+        
+        <h5 class="price">Price: <b>21$</b>/night</h5></a>
+      </div>
+      <div class="col-6"><a href="/6">
+          <img src="../images/6.jpg" alt="">
+          <h4>Diva-Comfortable master room with private bathroom
+           
+             <div class="host">Superhost</div></h4>  
+             <div class="type"> <b>Private Room</b></div>        
+             <div class="rating">Rate: 4.9 
+            <i class="fas fa-star"></i>
+        </div>
+        
+        <h5 class="price">Price: <b>75$</b>/night</h5></a>
+      </div>
+      <div class="col-6"><a href="/7">
+          <img src="../images/7.jpg" alt="">
+          <h4>Brand new renovated room close to heart of Toronto 
+            
+             <div class="host">Superhost</div></h4>
+             <div class="type"> <b>Private Room</b></div>
+          <div class="rating">Rate: 4.68
+            <i class="fas fa-star"></i>
+        </div>
+        
+        <h5 class="price">Price:  <b>60$</b>/night</h5></a>
+      </div>
+      <div class="col-6"><a href="/8">
+          <img src="../images/8.jpg" alt="">
+          <h4>A place near to CENTENNIAL COLLEGE
+  
+            
+             <div class="host">Superhost</div></h4>
+             <div class="type"> <b>Private Room</b></div>
+          <div class="rating">Rate: 4.73
+              <i class="fas fa-star"></i>
+          </div>
+         
+          <h5 class="price">Price:  <b>80$</b>/night</h5></a>
+      </div>
+      <div class="col-6"><a href="/9">
+          <img src="../images/9.jpg" alt="" >
+          
+            <h4>Casa Kapra - Modern Peaceful Private Room
+              
+               <div class="host">Superhost</div></h4>
+               <div class="type"> <b>Private Room</b></div>
+          <div class="rating">Rate: 5.0
+            <i class="fas fa-star"></i>
+        </div>
+        
+        <h5 class="price">Price:  <b>50$</b>/night</h5></a>
+      </div>
+      <div class="col-6"><a href="/4">
+        <img src="../images/4.jpg" alt="">
+        <h4><a href="../views/5.html">Cutest House Around!!! </a>
+          
+           <div class="host">Superhost</div></h4> 
+           <div class="type"> <b>Entire House</b></div>
+        <div class="rating">Rate: 4.91
+          <i class="fas fa-star"></i>
+      </div>
+          <h5 class="price">Price:<b>89$</b>/night</h5></a>
+        </div>
+  </div>
+  </div>
+  </div>
+
+
+<!--Promotion Section-->
+<div class="promotion_section">
+  <h2 class="title">About Us</h2>
+  <div class="img_slideshow-container">
+    
+    <div class="mySlides">
+      <video muted autoplay controls poster="../images/Introducing Airbnb Adventures - Airbnb Adventures.jpg">
+        <source src="../videos/Introducing Airbnb Adventures - Airbnb Adventures - Airbnb.mp4" type="video/mp4" data-original=>
+      </video> 
+    </div>
+  
+    <div class="mySlides">
+      <video muted autoplay controls poster="../images/Introducing Airbnb Plus.jpg">
+        <source src="../videos//Introducing Airbnb Plus - Airbnb.mp4" type="video/mp4">
+      </video> 
+    </div>
+  
+    <div class="mySlides">
+      <video muted autoplay controls poster="../images/What is Airbnb- - Travel Tips - Airbnb.jpg">
+        <source src="../videos/What is Airbnb- - Travel Tips - Airbnb.mp4" type="video/mp4">
+      </video>
+    </div> 
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <br>
+  
+  <div class="pagenum_show">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div> 
+  </div>
+  </div>  
+<!--Footer-->
+<footer>
+  <ul class="footer-nav">
+    <li class="nav-item nav-item-extra">
+      <h2 class="nav-title">About</h2>
+      <ul class="nav-ul nav-ul-extra">
+        <li>
+          <a href="#">How Airbnb works</a>
+        </li>
+        <li>
+          <a href="#">Newsroom</a>
+        </li>
+        <li>
+          <a href="#">Airbnb Plus</a>
+        </li>
+        <li>
+          <a href="#">Airbnb Luxe</a>
+        </li>
+        <li>
+          <a href="#">Olympics</a>
+        </li>
+        <li>
+          <a href="#">Airbnb for Work</a>
+        </li>
+        <li>
+          <a href="#">Hotel Tonight</a>
+        </li>
+        <li>
+          <a href="#">Careers</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="nav-item nav-item-extra">
+      <h2 class="nav-title">Community</h2>
+      <ul class="nav-ul nav-ul-extra">
+        <li>
+          <a href="#"> Diversity & Belonging</a>
+        </li>
+        <li>
+          <a href="#">Accessibility</a>
+        </li>
+        <li>
+          <a href="#">Airbnb Associates</a>
+        </li>
+        <li>
+          <a href="#">Frontline Stays</a>
+        </li>
+        <li>
+          <a href="#">Invite friends</a>
+        </li>
+      </ul>
+    </li>
+    
+
+
+
+
+    <li class="nav-item nav-item-extra">
+      <h2 class="nav-title">Technology</h2>
+      <ul class="nav-ul nav-ul-extra">
+        <li>
+          <a href="#">Host your home</a>
+        </li>
+        <li>
+          <a href="#">Responsible hosting</a>
+        </li>
+        <li>
+          <a href="#">Community Centre</a>
+        </li>
+        <li>
+          <a href="#">Host an Online Experience</a>
+        </li>
+        <li>
+          <a href="#">
+            Open Homes</a>
+        </li>
+        <li>
+          <a href="#">Host an Experience</a>
+        </li>
+        <li>
+          <a href="#">Resource Centre</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav-item">
+      <h2 class="nav-title">Support</h2>
+      <ul class="nav-ul">
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="#">Terms of Use</a>
+        </li>
+        <li>
+          <a href="#">Help Center</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; Hoang Phuong Thuy. All rights reserved.<div class="social-links">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+    </div></p>
+
+  </div>
+</footer>
+
+
+  <script src="../js/index.js"></script>
+</body>
+</html>
